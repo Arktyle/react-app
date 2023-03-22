@@ -1,0 +1,19 @@
+name: My Workflow
+on: 
+  pull_request:
+    branches:
+    - develop
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use NodeJS 12.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+    - run: npm ci # similar a npm install pero instala dependencias con versiones fijas.
+    - run: npm run format:check
+    - run: npm test -- --coverage
+      env:
+        CI: true
