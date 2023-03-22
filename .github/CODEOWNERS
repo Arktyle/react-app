@@ -1,0 +1,6 @@
+*             @arktyle
+*.js          @arktyle
+*-yaml        @arktyle
+/public/      @arktyle
+.github/*     @Blue-Express/devops
+CODEOWNERS    @Blue-Express/devops
