@@ -2,5 +2,5 @@
 *.js          @arktyle
 *-yaml        @arktyle
 /public/      @arktyle
-3 .github/*     @Blue-Express/devops
+# .github/*     @Blue-Express/devops
 # CODEOWNERS    @Blue-Express/devops
